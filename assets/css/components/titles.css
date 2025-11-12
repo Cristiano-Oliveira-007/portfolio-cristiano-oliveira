@@ -1,0 +1,36 @@
+.section-header {
+    margin-bottom: 3rem;
+    text-align: left;
+    position: relative;
+}
+
+.section-header h2 {
+    font-size: 2rem;
+    font-weight: 700;
+    color:var(--color-text-primary);
+    text-transform: capitalize;
+    margin-bottom: 0.5rem;
+    position: relative;
+    padding-left: 1rem;
+    letter-spacing: 0.5px;
+}
+
+.section-header h2::before {
+    content: "";
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 5px;
+    height: 100%;
+    background: var(--gradient-180deg-emphasis);
+    border-radius: 2px;
+    box-shadow: 0 0 8px rgba(59, 130, 246, 0.3);
+}
+
+.section-header p {
+    font-size: 1rem;
+    color: var(--color-text-primary);
+    padding-left: 1rem;
+    max-width: 600px;
+    line-height: 1.6;
+}

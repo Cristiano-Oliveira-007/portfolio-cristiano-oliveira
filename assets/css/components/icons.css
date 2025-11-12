@@ -1,0 +1,24 @@
+.icon-global {
+    color: var(--color-accent);
+    transition: color 0.3s ease, transform 0.3s ease, filter 0.3s ease;
+    cursor: pointer;
+    will-change: transform, color, filter;
+}
+
+.icon-global:hover {
+    color: var(--color-accent-hover);
+    transform: translateY(-3px);
+    filter: brightness(1.15);
+}
+
+.icon-low {
+    color: var(--color-icon-low);
+    transition: color 0.3s ease, transform 0.3s ease, filter 0.3s ease;
+    cursor: pointer;
+    will-change: transform, color, filter;
+}
+
+.icon-low:hover {
+    color: var(--color-icon-low-hover);
+    transform: translateY(-3px);
+}

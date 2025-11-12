@@ -1,0 +1,119 @@
+.career {
+    margin-top: 72px;
+    margin-bottom: 72px;
+}
+
+
+.accordion {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+}
+
+.accordion-item {
+    background-color:var(--color-bg-acordion);
+    border-radius: 10px;
+    overflow: hidden;
+    transition: transform 0.35s ease-in-out, box-shadow 0.35s ease-in-out, background 0.5s ease-in-out;
+    will-change: transform, box-shadow, background;
+}
+
+.accordion-item:hover {
+    box-shadow: 0 8px 22px rgba(0, 0, 0, 0.5);
+    background: var(--gradient-90deg-mid);
+}
+
+.accordion-item.active {
+    transform: translateY(-4px);
+    box-shadow: 0 8px 22px rgba(0, 0, 0, 0.5);
+    background: var(--gradient-90deg-mid);
+}
+
+.accordion-header {
+    width: 100%;
+    background: none;
+    border: none;
+    color: var(--color-text-primary);
+    text-align: left;
+    font-size: 17px;
+    font-weight: 600;
+    padding: 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    cursor: pointer;
+    scroll-margin-top: 110px;
+}
+
+.accordion-header .arrow {
+    color: var(--color-accent);
+    font-size: 22px;
+    font-weight: 500;
+    transition: color 0.3s ease;
+}
+
+.accordion-header:hover .arrow {
+    color: var(--color-accent-hover);
+}
+
+.accordion-content {
+    max-height: 0;
+    overflow: hidden;
+    padding: 0 20px;
+    transition: max-height 0.35s ease-in-out, padding 0.35s ease-in-out;
+}
+
+.accordion-item.active .accordion-content {
+    padding: 20px;
+}
+
+.period {
+    font-size: 14px;
+    color: var(--color-text-secondary);
+    display: flex;
+    align-items: center;
+    gap: 6px;
+    margin-bottom: 8px;
+    transition: color 0.3s ease;
+}
+
+.period i {
+    color: var(--color-accent);
+    transition: color 0.3s ease;
+}
+
+.job-description {
+    color: var(--color-text-secondary);
+    font-size: 15px;
+    line-height: 1.6;
+    margin-bottom: 10px;
+}
+
+.accordion-content .main-functions {
+    color: var(--color-text-primary);
+    display: block;
+    margin-top: 1rem;
+    margin-bottom: 0.5rem;
+    font-weight: 600;
+    font-size: 1rem;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+}
+
+.accordion-content span {
+    display: block;
+    color: var(--color-text-secondary);
+    font-size: 15px;
+    margin-bottom: 6px;
+}
+
+.accordion-content span i {
+    font-size: 8px;
+    margin-right: 8px;
+    color: var(--color-accent);
+}
+
+.accordion-item,
+.accordion-header {
+    border: none;
+}

@@ -1,0 +1,66 @@
+.btn-blue {
+    background: var(--gradient-90deg-emphasis);
+    color: var(--color-btn-blue-text);
+    border: none;
+    border-radius: 10px;
+    font-weight: 600;
+    text-decoration: none;
+    box-shadow: 0 3px 10px rgba(37, 99, 235, 0.3);
+    transition: all 0.35s ease;
+}
+
+.btn-blue:hover {
+    filter: brightness(1.20);
+    transform: translateY(-3px);
+    color: var(--color-btn-blue-text);
+}
+
+.btn-link {
+    background: var(--color-btn-link-bg);
+    border: 1px solid var(--color-btn-link-bd);
+    color: var(--color-text-secondary);
+    background-clip: padding-box;
+    overflow: hidden;
+}
+
+.btn-link:hover {
+    border-color: var(--color-btn-link-bd-hover);
+    color: var(--color-text-primary);
+    background: var(--color-btn-link-bg-hover);
+    transform: translateY(-2px);
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.25);
+}
+
+.btn-view {
+    background: var(--color-btn-view-bg);
+    color: var(--color-text-primary);
+    border: 1px solid var(--color-btn-view-bd);
+    font-weight: 600;
+    text-decoration: none;
+    cursor: pointer;
+    transition: background 0.3s ease, transform 0.3s ease, border-color 0.3s ease;
+}
+
+.btn-view:hover {
+    background: var(--color-btn-view-bg-hover);
+    border-color: var(--color-btn-view-bd-hover);
+    color: var(--color-text-primary);
+    transform: translateY(-2px);
+}
+
+.btn-theme-mobile {
+    background: var(--color-btn-themeMobile-bg);
+    border: 1px solid var(--color-btn-themeMobile-bd);
+    border-radius: 6px;
+    color: var(--color-text-primary);
+    cursor: pointer;
+    font-size: 1rem;
+    transition: background 0.3s ease, color 0.3s ease;
+}
+
+.btn-theme-mobile:hover {
+    background: var(--color-btn-themeMobile-bg-hover);
+    border: 1px solid var(--color-btn-themeMobile-bd-hover);
+    color: var(--color-text-primary);
+}
+

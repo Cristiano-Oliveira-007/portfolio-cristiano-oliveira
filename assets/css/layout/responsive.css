@@ -1,0 +1,160 @@
+/* ====== BOTÃO MOBILE (ESCONDIDO) ====== */
+.mobile-menu-btn {
+    display: none;
+    background: none;
+    border: none;
+    color: #fff;
+    font-size: 1.8rem;
+    cursor: pointer;
+}
+
+/* ====== RESPONSIVIDADE <=1170px ====== */
+@media (max-width: 1170px) {
+    .contact-content {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .contact-form {
+        order: 1;
+        width: 100%;
+        flex: none;
+        margin: 0 auto;
+        margin-bottom: 12px;
+    }
+
+    .contact-info {
+        order: 2;
+        flex: none;
+        margin: 0 auto;
+        width: 100%;
+    }
+
+    .contact-form .btn {
+        display: flex;
+        justify-content: flex-end;
+        margin-left: auto;
+    }
+}
+
+/* ====== RESPONSIVIDADE <=1122px ====== */
+@media (max-width: 1122px) {
+    .projects-container {
+        display: flex;
+        flex-direction: column !important;
+        align-items: center;
+        justify-content: center;
+        width: 100%;
+        gap: 40px;
+    }
+
+    .project-card {
+        width: 100% !important;
+        max-width: 100%!important;
+        flex: none !important;
+    }
+}
+
+/* ====== RESPONSIVIDADE <=992px ====== */
+@media (max-width: 992px) {
+    .mobile-menu-btn {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        font-size: clamp(1.4rem, 2vw, 1.8rem);
+        color: #93c5fd;
+        background: none;
+        border: none;
+        cursor: pointer;
+        transition: transform 0.3s ease, color 0.3s ease;
+    }
+
+    .mobile-menu-btn:hover {
+        color: #60a5fa;
+        transform: scale(1.1);
+    }
+
+    .navbar-desktop,
+    .theme-toggle {
+        display: none !important;
+    }
+
+    /* força o container a empilhar e centralizar  AQUI FIQUEI SEM SACO E USEI GPT MESMO AZAR*/
+    .profile-container {
+        display: flex !important;
+        flex-direction: column !important;
+        align-items: center !important;
+        text-align: center !important;
+        gap: 18px !important;
+        padding: 0 !important;
+    }
+
+    /* garante que a foto vá para cima */
+    .profile .photo {
+        order: -1 !important;
+        width: 100% !important;
+        display: flex !important;
+        justify-content: center !important;
+        margin: 0 !important;
+        padding: 0 !important;
+    }
+
+    /* libera a imagem de margens e tamanhos fixos */
+    .profile .photo img {
+        margin: 0 auto !important;
+        width: clamp(160px, 44vw, 320px) !important;
+        height: auto !important;
+        max-width: 100% !important;
+        object-fit: cover !important;
+        border-radius: 12px !important;
+        display: block !important;
+    }
+
+    .profile .text h1 {
+        font-size: clamp(1.4rem, 4.6vw, 2.6rem) !important;
+        line-height: 1.08 !important;
+    }
+
+    .profile .text .subtitle,
+    .profile .text .description {
+        font-size: 1rem !important;
+    }
+
+    /* centraliza e alinha botões/ícones */
+    .profile-buttons {
+        justify-content: center !important;
+        gap: 12px !important;
+        margin-top: 12px !important;
+    }
+
+    .social-links {
+        display: flex !important;
+        justify-content: center !important;
+        gap: 12px !important;
+        margin: 12px 0 20px 0 !important;
+    }
+}
+
+/* ====== RESPONSIVIDADE <=680px ====== */
+@media (max-width: 680px) {
+    .footer-content {
+        flex-direction: column;
+        align-items: center;
+        gap: 10px;
+        text-align: center;
+    }
+
+    .footer-social {
+        justify-content: center;
+        padding-right: 0;
+    }
+}
+
+/* ====== RESPONSIVIDADE <=480px ====== */
+@media (max-width: 480px) {
+    .contact-form button[type="submit"] {
+        width: 100%;
+        display: block;
+    }
+}

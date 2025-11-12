@@ -1,0 +1,138 @@
+.header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background: var(--gradient-145deg);
+    backdrop-filter: blur(10px);
+    z-index: 1000;
+    box-shadow: 0 2px 15px rgba(0, 0, 0, 0.3);
+    transition: background 0.5s ease, box-shadow 0.3s ease;
+}
+
+.header:hover {
+    background: var(--gradient-145deg-hover);
+}
+
+.header-container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 12px 20px;
+}
+
+.logo a {
+    text-decoration: none;
+}
+
+.logo a h1 {
+    font-size: 2.2rem;
+    font-weight: 700;
+    color: var(--color-text-primary);
+    letter-spacing: 1px;
+    transition: color 0.4s ease, transform 0.4s ease;
+    position: relative;
+}
+
+.logo a h1::after {
+    content: "";
+    position: absolute;
+    bottom: -4px;
+    left: 0;
+    width: 0;
+    height: 2px;
+    background: var(--gradient-90deg-emphasis);
+    border-radius: 2px;
+    transition: width 0.4s ease;
+}
+
+.logo a:hover h1 {
+    background: var(--gradient-90deg-emphasis);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    transform: scale(1.03);
+}
+
+.logo a:hover h1::after {
+    width: 100%;
+}
+
+.navbar-desktop {
+    display: flex;
+    align-items: center;
+    gap: 2.5rem;
+}
+
+.navbar-desktop ul {
+    display: flex;
+    gap: 2rem;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+.navbar-desktop a {
+    color: var(--color-text-secondary);
+    text-decoration: none;
+    font-weight: 500;
+    font-size: 0.95rem;
+    position: relative;
+    transition: color 0.3s ease;
+}
+
+.navbar-desktop a::after {
+    content: "";
+    position: absolute;
+    bottom: -5px;
+    left: 0;
+    width: 0%;
+    height: 2px;
+    background: var(--gradient-90deg-emphasis);
+    border-radius: 2px;
+    transition: width 0.3s ease;
+}
+
+.navbar-desktop a:hover {
+    color: var(--color-accent);
+}
+
+.navbar-desktop a:hover::after {
+    width: 100%;
+}
+
+.theme-toggle {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#theme-btn {
+    width: 40px;
+    height: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: none;
+    border: none;
+    color: var(--color-text-primary);
+    font-size: 1.4rem;
+    cursor: pointer;
+    transition: transform 0.2s ease, color 0.3s ease;
+    position: relative;
+}
+
+#theme-btn:hover {
+    transform: scale(1.1);
+    color: var(--color-accent);
+}
+
+#theme-btn i {
+    opacity: 1;
+    transform: scale(1);
+    transition: opacity 0.3s ease, transform 0.3s ease;
+}
+
+#theme-btn i.fade-out {
+    opacity: 0;
+    transform: scale(0.7);
+}

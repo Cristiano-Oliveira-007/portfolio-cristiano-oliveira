@@ -1,0 +1,55 @@
+:root {
+/* 🎨 Geral */
+  --color-bg: #f5f7fa;
+  --color-text-primary: #1a1f29;
+  --color-text-secondary: #4b5563;
+
+/* 🎨 Gradientes */
+  --gradient-90deg-emphasis: linear-gradient(90deg, #2563eb, #3b82f6, #60a5fa);
+  --gradient-180deg-emphasis: linear-gradient(180deg, #2563eb, #3b82f6, #60a5fa);
+
+  --gradient-145deg: linear-gradient(145deg, #f4f4f5, #dfe1e5);
+  --gradient-180deg: linear-gradient(180deg, #e2e4e8, #f5f6f7);
+  --gradient-90deg: linear-gradient(90deg, #f7f8f9, #e3e5e8, #f2f3f5);
+  --gradient-90deg-mid: linear-gradient(90deg, #f2f3f5, #e3e5e8);
+
+  --gradient-90deg-hover: linear-gradient(90deg, #eef0f3, #dfe2e6);
+  --gradient-145deg-hover: linear-gradient(145deg, #eef0f3, #dfe2e6);
+
+/* 🎨 Cores Gerais */
+  --color-bg-acordion: #e6e8eb;
+
+  --color-hover-transparent: #0000000D;
+
+  --color-accent: #60a5fa;
+  --color-accent-hover: #3b82f6;
+
+  --color-tags-bg: #dee3ea;
+  --color-tags-text: #29406d;
+
+  --color-formInput-bd: #cbd5e1;
+
+  --color-themeMobile-bd:#0000001A;
+
+/* 🎨 Botões */
+  --color-btn-blue-text: #fff;
+
+  --color-btn-link-bg: rgba(226, 232, 240, 0.6);
+  --color-btn-link-bd: #cbd5e1;
+  --color-btn-link-bg-hover: rgba(37, 99, 235, 0.08);
+  --color-btn-link-bd-hover: #60a5fa;
+  
+  --color-btn-view-bg: linear-gradient(90deg, #e2e8f0, #f1f5f9);
+  --color-btn-view-bd: #cbd5e1;
+  --color-btn-view-bg-hover: linear-gradient(90deg, #dbeafe, #e0f2fe);
+  --color-btn-view-bd-hover: #3b82f6;
+
+  --color-btn-themeMobile-bg: #e8f1ff;
+  --color-btn-themeMobile-bd: #3b82f6;
+  --color-btn-themeMobile-bg-hover: #d0e3ff;
+  --color-btn-themeMobile-bd-hover: #1d4ed8;
+
+/* 🎨 Ícones */
+  --color-icon-low: #6b7280;
+  --color-icon-low-hover: #3b82f6;
+}
