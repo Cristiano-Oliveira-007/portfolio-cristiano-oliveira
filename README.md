@@ -9,7 +9,7 @@ Este projeto foi desenvolvido com foco em **performance, design responsivo, clar
 Este site apresenta minha trajetória profissional, habilidades, projetos e formas de contato, tudo em uma interface fluida com **modo escuro e claro**.  
 Cada detalhe foi planejado para oferecer uma **experiência moderna e acessível**, mantendo coerência estética em qualquer dispositivo.
 
-🔗 **Acesse online:** *[(adicione aqui o link da Vercel ou GitHub Pages quando publicado)](https://cristiano-oliveira-007.github.io/portfolio-cristiano-oliveira)*  
+🔗 **Acesse online:** *(https://cristiano-oliveira-007.github.io/portfolio-cristiano-oliveira)*  
 
 ---
 
